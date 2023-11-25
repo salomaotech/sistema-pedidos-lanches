@@ -1,0 +1,3 @@
+1 - Você irá precisar gerar o certificado da Efi Bank (Gerencia net) e adicioná-lo na pasta certs.
+2 - No arquivo credenciais.json você irá adicionar suas credênciais de produção ou desenvolvimento lá.
+

@@ -1,0 +1,31 @@
+<mxfile host="Electron" modified="2023-09-05T18:08:08.817Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.5 Chrome/114.0.5735.243 Electron/25.3.1 Safari/537.36" etag="PoRsBbvlFemJBBA7QkzS" version="21.6.5" type="device">
+  <diagram name="Página-1" id="5j-ww4zHZG7wsbymvLwp">
+    <mxGraphModel dx="880" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kYT57yn9HTB8OajrBAQV-72" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="50" y="120" width="750" height="940" as="geometry" />
+        </mxCell>
+        <mxCell id="kYT57yn9HTB8OajrBAQV-87" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Checkout com QR Code - Aprovado&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=12;fontFamily=Helvetica;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="210" y="41" width="430" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kYT57yn9HTB8OajrBAQV-88" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 24px;&quot;&gt;05/09/2023&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;fontSize=12;fontFamily=Helvetica;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="60" y="1105" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wW45ZbLXODUrG5sJJo66-4" value="" style="group;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="261" y="367" width="305" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="wW45ZbLXODUrG5sJJo66-1" value="" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" parent="wW45ZbLXODUrG5sJJo66-4" vertex="1">
+          <mxGeometry width="305" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hgxzhNsgKWRggUkRfc8B-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;sketch=1;curveFitting=1;jiggle=2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="wW45ZbLXODUrG5sJJo66-4">
+          <mxGeometry x="110" y="100" width="85" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wW45ZbLXODUrG5sJJo66-5" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Pagamento aprovado!&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+          <mxGeometry x="159" y="732" width="510" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

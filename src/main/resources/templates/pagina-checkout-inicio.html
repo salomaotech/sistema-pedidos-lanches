@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Checkout</title>
+        <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css">
+        <link rel="stylesheet" th:href="@{/css/custom.css}" type="text/css">
+
+        <!-- scripts -->
+        <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+        <script th:src="@{/js/ajax.js}"></script>
+
+        <!-- Menu do topo -->
+        <link rel="stylesheet" th:href="@{/css/menu-topo.css}" type="text/css">
+        <script th:src="@{/js/menu-topo.js}"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="logotipo">
+                <a th:href="@{/}"><img th:src="@{/images/logo.svg}" alt="Logo"></a>
+            </div>
+
+            <div class="carrinho" th:unless="${session.isAdmin}">
+                <a th:href="@{/pagina-carrinho-compra}" class="carrinho-link">
+                    <img th:src="@{/images/carrinho.svg}" alt="Carrinho">
+                    <span class="carrinho-quantidade" id="carrinho-quantidade">0</span>
+                </a>
+            </div>
+
+        </header>
+
+        <nav th:if="${session.isAdmin}">
+
+            <div class="topMenu" id="menuTopNav">
+
+                <a th:href="@{/}">Home</a>
+
+                <div class="topMenuDropDown">
+
+                    <button class="topMenuDropDownBtn">
+                        Configurações
+                    </button>
+
+                    <div class="topMenuDropDown-content">
+                        <a th:href="@{/pagina-novo-produto}">Novo produto</a>
+                        <a th:href="@{/pagina-catalogo}">Catálogo</a>
+                        <a th:href="@{/pagina-pedidos}">Pedidos</a>
+                    </div>
+
+                </div>
+
+                <a th:href="@{/logout}">Logout</a>
+
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuTopNavFunction()">&#9776;</a>
+
+            </div>
+
+        </nav>
+
+        <main>
+
+            <div class="campo-checkout" th:object="${pagamento}">
+
+                <div>Por favor leia o QR CODE</div>
+
+                <div>
+                    <img th:src="@{'/uploads/' + *{qrCode}}" alt="QR Code" th:if="*{qrCode != null}">
+                    <img th:src="@{'/images/reprovado.png'}" th:if="*{qrCode == null}">
+                </div>
+
+                <div id="idCampoRetornoPagamentoQrCode" th:attr="data-txid=${pagamento.txid}, data-qrcode=${pagamento.qrCode}"></div>
+
+            </div>
+
+        </main>
+
+        <footer>Versão 0.1</footer>
+
+        <!-- scripts pós load -->
+        <script th:src="@{/js/script-checkout-qrcode.js}"></script>
+
+    </body>
+
+</html>

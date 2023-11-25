@@ -1,0 +1,554 @@
+/* sobrecarga de elementos principais */
+a{
+
+    color: #db0007;
+
+}
+
+main{
+
+    padding-left: 8vh;
+    padding-right: 8vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+}
+
+header{
+
+    width: 100%;
+    display: table;
+    background-color: #27251F;
+    border-bottom-width: 5px;
+    border-bottom-color: #ffbc0d;
+    border-bottom-style: solid;
+
+}
+
+nav{
+
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+
+}
+
+footer{
+
+    box-shadow: 0 -2px 4px 0 rgba(0,0,0,.08);
+    background-color: #27251F;
+    border-top-width: 5px;
+    border-top-color: #ffbc0d;
+    border-top-style: solid;
+
+}
+
+/* logo */
+.logotipo{
+
+    float: left;
+    width: 80px;
+
+}
+
+.logotipo img{
+
+    width: 100%;
+
+}
+
+/* botões grandes */
+.botao-grande-1,
+.botao-grande-2,
+.botao-grande-3 {
+
+    font-family: "Segoe UI Bold" !important;
+    font-size: 24px;
+    color: #000000;
+    height: 65px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.botao-grande-1 {
+
+    background-color: #ffbc0d;
+    border: 2px solid #ffbc0d;
+
+}
+
+.botao-grande-2 {
+
+    background-color: #ffffff;
+    border: 2px solid #000000;
+
+}
+
+.botao-grande-3 {
+
+    background-color: #DA291C;
+    border: 2px solid #DA291C;
+    color: #fff;
+
+}
+
+/* botões pequenos */
+.botao-pequeno-1,
+.botao-pequeno-2,
+.botao-pequeno-3 {
+
+    font-family: "Segoe UI Bold" !important;
+    font-size: 1rem;
+    color: #000000;
+    height: 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.botao-pequeno-1 {
+
+    background-color: #ffbc0d;
+    border: 1px solid #ffbc0d;
+
+}
+
+.botao-pequeno-2 {
+
+    background-color: #ffffff;
+    border: 1px solid #000000;
+
+}
+
+.botao-pequeno-3 {
+
+    background-color: #DA291C;
+    border: 1px solid #DA291C;
+    color: #fff;
+
+}
+
+/* campos */
+input[type=text],
+input[type=email],
+input[type=email],
+input[type=number],
+input[type=datetime],
+input[type=password],
+select,
+textarea {
+
+    font-size: 24px;
+    color: #000000;
+    height: 65px;
+    border: 2px solid #6f6f6f;
+    border-radius: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+textarea{
+
+    min-height: 30vh;
+
+}
+
+input[type=file]:hover {
+
+    background-color: #0056b3;
+
+}
+
+/* formulário */
+.form-input {
+
+    font-size: inherit !important;
+    color: inherit !important;
+    height: 40px !important;
+
+}
+
+.formulario-container {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+
+}
+
+.formulario-container-secao,
+.formulario-container-secao-campo {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+
+}
+
+.formulario-container-secao-campo{
+
+    gap: 5px;
+
+}
+
+.formulario-container-secao-envia{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+}
+
+.formulario-container-secao-envia *{
+
+    width: 100%;
+
+}
+
+.formulario-container-secao-campo label{
+
+    font-size: 24px;
+    font-family: "Segoe UI Bold" !important;
+
+}
+
+.formulario-container-secao-campo-imagem {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+
+}
+
+.formulario-container-secao-campo-imagem-thumb{
+
+    border: 2px solid #6f6f6f;
+    padding: 1vh;
+
+}
+
+.formulario-container-secao-campo-imagem-file{
+
+    padding-top: 5px;
+
+}
+
+.formulario-container-secao-campo-imagem-thumb img,
+.formulario-container-secao-campo-imagem-file button {
+
+    width: 100%;
+
+}
+
+/* catálogo de produtos */
+.catalogo-produtos{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 50px;
+
+}
+
+.catalogo-produtos-produto {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
+    border: 2px solid #e1e1e1;
+    padding: 5vh;
+
+}
+
+.catalogo-produtos-produto-imagem{
+
+    height: 250px;
+
+}
+
+.catalogo-produtos-produto-imagem img {
+
+    height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.catalogo-produtos-produto-nome,
+.catalogo-produtos-produto-descricao,
+.catalogo-produtos-produto-valor{
+
+    font-size: 32px;
+    font-family: "Segoe UI Bold" !important;
+    text-align: center;
+
+}
+
+.catalogo-produtos-produto-descricao{
+
+    font-family: "Segoe UI" !important;
+    font-size: 18px;
+    color: #000000;
+
+}
+
+.catalogo-produtos-produto-adiciona {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+.catalogo-produtos-produto-edita{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+}
+
+.catalogo-produtos-produto-adiciona input,
+.catalogo-produtos-produto-adiciona button {
+
+    width: 100%;
+
+}
+
+.catalogo-produtos-produto-adiciona input {
+
+    width: 100%;
+    text-align: center;
+    background-color: #e1e1e1;
+
+}
+
+/* carrinho */
+.carrinho {
+
+    float: right;
+
+}
+
+.carrinho a {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+
+}
+
+.carrinho img {
+
+    width: 80px;
+
+}
+
+.carrinho-quantidade {
+
+    font-size: 28px;
+    background-color: #ffbc0d;
+    color: #000000;
+    font-family: "Segoe UI Bold" !important;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+.carrinho-itens-selecionados{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+}
+
+.carrinho-itens-selecionados > :nth-child(1) {
+
+    font-size: 32px;
+    font-family: "Segoe UI Bold" !important;
+    text-align: center;
+
+}
+
+.carrinho-itens-selecionados-item{
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
+    border: 2px solid #e1e1e1;
+    padding: 1vh;
+
+}
+
+.carrinho-itens-selecionados-item *{
+
+    font-family: "Segoe UI Bold" !important;
+    font-size: 32px;
+    color: #000000;
+
+}
+
+.carrinho-itens-selecionados-item > :nth-child(1){
+
+    padding: 4vh;
+
+}
+
+.carrinho-itens-selecionados-item > :nth-child(2){
+
+    background-color: #ffbc0d;
+    padding: 4vh;
+
+}
+
+.carrinho-itens-selecionados-total{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+}
+
+.carrinho-itens-selecionados-total > :nth-child(1){
+
+    font-family: "Segoe UI Bold" !important;
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+    padding-bottom: 2vh;
+
+}
+
+.carrinho-itens-selecionados-total > :nth-child(2){
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+}
+
+.carrinho-itens-selecionados-total > :nth-child(2) a{
+
+    height: 100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* checkout */
+.campo-checkout{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+}
+
+.campo-checkout > :nth-child(1),
+.campo-checkout > :nth-child(3){
+
+    font-size: 32px;
+    font-family: "Segoe UI Bold" !important;
+    text-align: center;
+
+}
+
+.campo-checkout > :nth-child(2){
+
+    text-align: center;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
+    border: 2px solid #e1e1e1;
+    padding: 2vh;
+
+}
+
+.campo-checkout-aprovacao{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+}
+
+.campo-checkout-aprovacao > :nth-child(1){
+
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.07);
+    border: 2px solid #e1e1e1;
+    padding: 2vh;
+
+}
+
+.campo-checkout-aprovacao > :nth-child(1),
+.campo-checkout-aprovacao > :nth-child(2),
+.campo-checkout-aprovacao > :nth-child(3){
+
+    font-size: 32px;
+    font-family: "Segoe UI Bold" !important;
+    text-align: center;
+
+}
+
+.campo-checkout-aprovacao > :nth-child(3) a{
+
+    padding: 4vh;
+
+}
+
+/* tabela */
+table {
+
+    border-collapse: collapse;
+    border: 1px solid #27251F;
+
+}
+
+table caption {
+
+    background-color: #27251F;
+    color: #fff;
+
+}
+
+table thead th {
+
+    padding: 8px;
+    background-color: #27251F;
+    color: #ffbc0d;
+    text-align: center;
+    font-family: "Segoe UI Bold" !important;
+
+}
+
+table th, table td {
+
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #27251F;
+    text-align: center;
+
+}
+
+table tbody th {
+
+    text-align: center;
+
+}

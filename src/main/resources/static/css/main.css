@@ -1,0 +1,104 @@
+/* fonts */
+@font-face{
+
+    font-family: "Segoe UI Bold Italic";
+    src: url("../fonts/segoeui/Segoe UI Bold Italic.ttf");
+
+}
+
+@font-face{
+
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/segoeui/Segoe UI Bold.ttf");
+
+}
+
+@font-face{
+
+    font-family: "Segoe UI Italic";
+    src: url("../fonts/segoeui/Segoe UI Italic.ttf");
+
+}
+
+@font-face{
+
+    font-family: "Segoe UI";
+    src: url("../fonts/segoeui/Segoe UI.ttf");
+
+}
+
+/* basic layout */
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Segoe UI" !important;
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+body{
+
+    height: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+header{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+nav{
+
+    padding: 8px;
+    background-color: #000000;
+
+}
+
+nav *{
+
+    font-size: 16px;
+
+}
+
+main{
+
+    max-width: 1366px;
+    min-height: 100vh;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer{
+
+    width: 100%;
+    height: 75px;
+    padding-top: 35px;
+    text-align: center;
+    background-color: #000000;
+    color: #cccccc;
+
+}
+
+footer a{
+
+    color: #ffa58d;
+
+}

@@ -1,0 +1,165 @@
+.topMenu {
+
+    display: flex;
+    overflow: hidden;
+    background-color: #ffffff;
+
+}
+
+.topMenu a {
+
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    font-family: "Segoe UI Bold" !important;
+
+}
+
+.topMenu .icon {
+
+    display: none;
+
+}
+
+.topMenuDropDown {
+
+    float: left;
+    overflow: hidden;
+
+}
+
+.topMenuDropDown .topMenuDropDownBtn {
+
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: inherit;
+    font-family: "Segoe UI Bold" !important;
+    margin: 0;
+
+}
+
+.topMenuDropDown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.topMenuDropDown-content a {
+
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+
+.topMenu a:hover, .topMenuDropDown:hover .topMenuDropDownBtn {
+
+    background-color: #ffbc0d;
+    color: #000000;
+
+}
+
+.topMenuDropDown-content a:hover {
+
+    background-color: #ffbc0d;
+    color: #000000;
+
+}
+
+.topMenuDropDown:hover .topMenuDropDown-content {
+
+    display: block;
+
+}
+
+.topMenuDropDownBtn:before{
+
+    content: "\25be";
+    float: right;
+    color: #ffffff;
+    margin-left: 10px;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .topMenu a:not(:first-child), .topMenuDropDown .topMenuDropDownBtn {
+
+        display: none;
+
+    }
+
+    .topMenu a.icon {
+
+        float: right;
+        display: block;
+
+    }
+
+    .topMenu.responsive {
+
+        position: relative;
+
+    }
+
+    .topMenu.responsive .icon {
+
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    .topMenu.responsive a {
+
+        float: none;
+        display: block;
+        text-align: left;
+
+    }
+
+    .topMenu.responsive .topMenuDropDown {
+
+        float: none;
+
+    }
+
+    .topMenu.responsive .topMenuDropDown-content {
+
+        position: relative;
+
+    }
+
+    .topMenu.responsive .topMenuDropDown .topMenuDropDownBtn {
+
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin-top: 8px;
+
+    }
+
+    .topMenu{
+
+        padding: 5px;
+
+    }
+
+}

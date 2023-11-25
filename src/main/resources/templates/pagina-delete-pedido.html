@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Exclusão de pedido</title>
+        <link rel="stylesheet" th:href="@{/css/main.css}" type="text/css">
+        <link rel="stylesheet" th:href="@{/css/custom.css}" type="text/css">
+
+        <!-- scripts -->
+        <script th:src="@{/js/jquery-3.7.1.min.js}"></script>
+        <script th:src="@{/js/ajax.js}"></script>
+
+        <!-- Menu do topo -->
+        <link rel="stylesheet" th:href="@{/css/menu-topo.css}" type="text/css">
+        <script th:src="@{/js/menu-topo.js}"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="logotipo">
+                <a th:href="@{/}"><img th:src="@{/images/logo.svg}" alt="Logo"></a>
+            </div>
+
+            <div class="carrinho" th:unless="${session.isAdmin}">
+                <a th:href="@{/pagina-carrinho-compra}" class="carrinho-link">
+                    <img th:src="@{/images/carrinho.svg}" alt="Carrinho">
+                    <span class="carrinho-quantidade" id="carrinho-quantidade">0</span>
+                </a>
+            </div>
+
+        </header>
+
+        <nav th:if="${session.isAdmin}">
+
+            <div class="topMenu" id="menuTopNav">
+
+                <a th:href="@{/}">Home</a>
+
+                <div class="topMenuDropDown">
+
+                    <button class="topMenuDropDownBtn">
+                        Configurações
+                    </button>
+
+                    <div class="topMenuDropDown-content">
+                        <a th:href="@{/pagina-novo-produto}">Novo produto</a>
+                        <a th:href="@{/pagina-catalogo}">Catálogo</a>
+                        <a th:href="@{/pagina-pedidos}">Pedidos</a>
+                    </div>
+
+                </div>
+
+                <a th:href="@{/logout}">Logout</a>
+
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="menuTopNavFunction()">&#9776;</a>
+
+            </div>
+
+        </nav>
+
+        <main th:if="${session.isAdmin}" th:object="${pedido}">
+
+            <form th:action="@{/deletePedido}" th:object="${pedido}" method="POST">
+
+                <input type="hidden" name="id" th:field="*{id}" th:if="*{id != 0}">
+
+                <div class="formulario-container">
+
+                    <div class="formulario-container-secao">
+
+                        <div class="formulario-container-secao-campo">
+                            <h1 th:text="'Pedido: ' + ${id}"></h1>
+                        </div>
+
+                        <div class="formulario-container-secao-campo">
+                            Ao excluir o pedido, não será possível recuperá-lo.
+                        </div>
+
+                        <div class="formulario-container-secao-envia">
+
+                            <div>
+                                <input type="submit" value="Prosseguir com exclusão" class="botao-pequeno-3" id="excluirPedidoButton">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+            <script>
+
+                document.getElementById("excluirPedidoButton").addEventListener("click", function (e) {
+
+                    if (!confirm("Tem certeza de que deseja excluir o pedido?")) {
+
+                        e.preventDefault();
+
+                    }
+
+                });
+
+            </script>
+
+        </main>
+
+        <main th:unless="${session.isAdmin}">
+            <h1>Acesso negado!</h1>
+        </main>
+
+        <footer>Versão 0.1</footer>
+
+    </body>
+
+</html>

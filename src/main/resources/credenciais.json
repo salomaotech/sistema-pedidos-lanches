@@ -1,0 +1,7 @@
+{
+    "client_id": "",
+    "client_secret": "",
+    "certificate": "./certs/seucertificado.p12",
+    "sandbox": false,
+    "debug": false
+}
